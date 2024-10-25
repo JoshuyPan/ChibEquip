@@ -43,7 +43,7 @@ module challenge2::chib{
         let mut defenceBonus: u128 = 0;
         let mut i = 0;
 
-        while(chib.inventory.length() < i){
+        while(chib.inventory.length() > i){
             if(chib.inventory[i].get_equip_isEquipped() == true){
                 attackBonus = attackBonus + chib.inventory[i].get_equip_attack();
                 defenceBonus = defenceBonus + chib.inventory[i].get_equip_defence();
